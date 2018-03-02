@@ -12,9 +12,9 @@ HTML, CSS, Javascript, Node, Express, MongoDB, Mongoose, PassportJS
 * View all campgrounds
 * Add a new campground with description and an image
 * Add comments to campgrounds
+* Authentication
 
 ### Future features
-* Authentication (currently working on)
 * Update styling, very basic for now
 * Migrate to Bootstrap 4
 * Fuzzy search
