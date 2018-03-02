@@ -1,7 +1,9 @@
 # YelpCamp
 *Work in progress*
 
-A Yelp "clone" for campsites. Project being created during an online full-stack web developer [course](https://www.udemy.com/the-web-developer-bootcamp/) with features not taught in the course.
+Running on my Centos7 vps [here](http://46.101.224.38)
+
+A Yelp "clone" for campsites. Project being created during an online full-stack web developer [course](https://www.udemy.com/the-web-developer-bootcamp/) with extra features not taught in the course.
 
 ### Built with
 HTML, CSS, Javascript, Node, Express, MongoDB, Mongoose, PassportJS
