@@ -9,6 +9,7 @@ var seedDB = require("./seeds");
 var passport = require("passport");
 var localStrategy = require("passport-local");
 var user = require("./models/user");
+var flash = require("connect-flash");
 
 //Requiring routes
 var commentRoutes = require("./routes/comments");
@@ -20,6 +21,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
+app.use(flash());
 
 // seedDB();
 
@@ -38,6 +40,8 @@ passport.deserializeUser(user.deserializeUser());
 
 app.use(function(req, res, next){
     res.locals.currentUser = req.user;
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
     next();
 });
 
